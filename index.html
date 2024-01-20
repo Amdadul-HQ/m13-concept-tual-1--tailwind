@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind Css link Start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Css link End -->
+
+    <!-- Google Font link Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Google Font link End -->
+
+    <!-- Coustome Tailwind Color Start -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'main-color': '#0E1133',
+                'main-bg': '#12174E',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Coustome Tailwind Color End -->
+
+    <!-- Css Font Class Start -->
+    <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <!-- Css font Class End -->
+    <title>Tailwind Conceptual 1</title>
+</head>
+
+<body class="font-poppins">
+
+    <header>
+        <!-- nav section start -->
+        <nav class="bg-main-color py-6 text-white">
+            <div class="container mx-auto lg:px-24 px-4 flex justify-between items-center">
+                <div class="flex items-center justify-center space-x-6">
+                    <!-- logo start -->
+                    <div class="">
+                        <img src="assets/logo-3.png" alt="">
+                    </div>
+                    <!-- logo end -->
+
+                    <!-- menu start -->
+                    <div class="space-x-4 text-base lg:flex hidden font-semibold">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Blog</a>
+                        <a href="">Services</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <!-- menu end -->
+
+                <!-- button start -->
+                <div class="hidden lg:flex space-x-6">
+                    <button class="bg-transparent py-2 rounded-md border-2 border-orange-500 transition-all duration-300 text-base font-medium hover:bg-orange-500 px-6">Log In</button>
+                    <button class="bg-orange-500 py-2 rounded-md border-2 border-orange-500 transition-all duration-300 text-base font-medium hover:bg-transparent px-6">Get Started</button>
+                </div>
+                <!-- button end -->
+
+                <!-- phone menu start -->
+                <div class="lg:hidden">
+                    <img class="w-6" src="assets/more.png" alt="">
+                </div>
+                <!-- phone menu end -->
+            </div>
+        </nav>
+        <!-- nav section end -->
+
+        <!-- banner section start -->
+        <section class="bg-main-bg pt-10 lg:pt-32">
+            <div class="container mx-auto flex flex-col justify-center items-center">
+                <div class="text-white text text-center space-y-9">
+                    <h1 class="lg:text-6xl text-4xl font-bold">Creative way to <br> showscase your <span class="text-orange-500">App</span></h1>
+                    <p>Your app maximum attention and get more and more download</p>
+                    <div class="flex justify-center items-center gap-5">
+                        <button class="bg-orange-500 py-2 rounded-md border-2 border-orange-500 transition-all duration-300 text-base font-medium hover:bg-transparent px-6">Get a Quote</button>
+                        <button class="flex items-center">
+                            <img src="assets/play-button.png" alt="">
+                            Play video
+                        </button>
+                    </div>
+                </div>
+                <div class="translate-y-24 lg:translate-y-56">
+                    <img src="assets/hero-thumb-4.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- banner section end -->
+    </header>
+
+    <!-- main start -->
+    <main>
+        <!-- What you can do section start -->
+        <section>
+            <div class="container text-center mx-auto my-52 space-y-9">
+                <h2 class="text-gray-400 text-4xl font-semibold">What you can do</h2>
+                <p class="lg:w-[50%] text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam asperiores sunt ad alias, voluptatum saepe minima, fuga commodi possimus, tenetur amet itaque debitis enim. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        <!-- What you can do section end -->
+
+        <!-- featured section start -->
+        <section>
+            <div class="container lg:px-24 mx-auto py-8">
+                <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-6 gap-6">
+                    <!-- Card-1 -->
+                    <div class="rounded-md text-center justify-center flex items-center flex-col space-y-4 p-8 shadow-xl">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+                            <img src="assets/play-store.png" alt="">
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-medium text-xl">Easy To Use</h3>
+                            <p class="text-center w-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, nam!</p>
+                            <a class="font-semibold" href="">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Card 1 End -->
+
+                    <!-- Card-2 -->
+                    <div class="rounded-md text-center justify-center flex items-center flex-col space-y-4 p-8 shadow-xl">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
+                            <img src="assets/play-store.png" alt="">
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-medium text-xl">Easy To Use</h3>
+                            <p class="text-center w-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, nam!</p>
+                            <a class="font-semibold" href="">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 End -->
+
+                    <!-- Card-3 -->
+                    <div class="rounded-md text-center justify-center flex items-center flex-col space-y-4 p-8 shadow-xl">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <img src="assets/play-store.png" alt="">
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-medium text-xl">Easy To Use</h3>
+                            <p class="text-center w-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, nam!</p>
+                            <a class="font-semibold" href="">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 End -->
+
+                    <!-- Card-4 -->
+                    <div class="rounded-md text-center justify-center flex items-center flex-col space-y-4 p-8 shadow-xl">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                            <img src="assets/play-store.png" alt="">
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-medium text-xl">Easy To Use</h3>
+                            <p class="text-center w-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, nam!</p>
+                            <a class="font-semibold" href="">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 End -->
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
